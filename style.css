@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'GrandisExtended-Regular';
+    src: url('./fonts/GrandisExtended-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'GrandisExtended-Black';
+    src: url('./fonts/GrandisExtended-Black.ttf');
+}
+
+@font-face {
+    font-family: 'GrandisExtended-Light';
+    src: url('./fonts/GrandisExtended-Light.ttf');
+}
+
+h1 {
+    font-family: 'GrandisExtended-Regular';
+}
+
+p {
+    font-family: 'GrandisExtended-Regular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 105px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+    margin-left: 105px;
+}
+
+#dropdownMenuButton1 {
+    border: 1px solid #EBEFF0;
+    border-radius: 100px;
+}
+
+.nav-link {
+    font-family: 'GrandisExtended-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #23282B;
+}
+
+button,
+.rg__btn {
+    background: #ffff50;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-family: 'GrandisExtended-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #23282B;
+    padding: 12px 24px;
+}
+
+button:hover,
+.rg__btn:hover {
+    background: #D6DEE1;
+    transition: all .9s;
+}
+
+.rg__btn {
+    position: fixed;
+}
+
+.button {
+    background: #D6DEE1;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-family: 'GrandisExtended-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #23282B;
+    padding: 12px 24px;
+}
+
+.button:hover {
+    background: #ffff50;
+    transition: all .9s;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    display: none;
+    right: 2%;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.active {
+    display: flex;
+    animation: anim 1.5s ease-out;
+}
+
+.mc__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcc__form {
+    width: 624px;
+    height: 757px;
+    background-color: #f8f8f8;
+    padding: 80px 81px;
+}
+
+.mcc__form p {
+    font-family: 'GrandisExtended-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #34424D;
+}
+
+.mcc__form-input {
+    max-width: 463px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.mcc__form-label h2 {
+    font-family: 'GrandisExtended-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #34424D;
+}
+
+.mcc__form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skrepka span {
+    font-family: 'GrandisExtended-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #34424D;
+}
+
+.mc__card-exit {
+    position: absolute;
+    top: 1%;
+    right: 34%;
+    font-size: 75px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.first__section {
+    background: url('./img/fs-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    align-self: end;
+}
+
+.swiper-slide {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
